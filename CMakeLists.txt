@@ -157,7 +157,7 @@ if (APPLE)
     endif ()
 else ()
     message(STATUS "CMAKE_SYSTEM_PROCESSOR = ${CMAKE_SYSTEM_PROCESSOR}")
-    if (CMAKE_SYSTEM_PROCESSOR MATCHES "(x86)|(X86)|(amd64)|(AMD64)")
+    if (CMAKE_SYSTEM_PROCESSOR MATCHES "(x86)|(X86)|(x86_64)|(amd64)|(AMD64)")
         set(X86 TRUE)
     endif ()
     if (CMAKE_CXX_COMPILER_TARGET MATCHES
